@@ -32,19 +32,382 @@
 </head>
 <body>
 
+<div class="popup popup_order" id="popup-order">
+	<div class="popup__title">Запись онлайн</div>
+	<form>
+		<input type="text" class="popup__input input" placeholder="Ваше имя и фамилия" name="name">
+		<input type="text" class="popup__input input input_phone" placeholder="Номер телефона" name="phone" required="required">
+		<textarea class="popup__textarea textarea" placeholder="Ваш вопрос" name="comment"></textarea>
+		<button class="popup__button button button_gradient"><span>Подтвердить запись</span></button>
+	</form>
+</div>
+
+
+<div class="popup popup_thanks" id="popup-thanks">
+	<div class="popup__title">Ваша заявка принята!</div>
+</div>
 
 <header class="header">
-	
+	<div class="panel">
+		<div class="container row">
+			<div class="panel__phone col"><i class="icon icon-whats-app"></i><i class="icon icon-viber"></i><i class="icon icon-phone"></i><a href="tel:89650399910">8 965 039 99 10</a></div>
+			<div class="panel__socials col right">
+				<ul>
+					<li><a href=""><i class="icon icon-vk"></i></a></li>
+					<li><a href=""><i class="icon icon-insta"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header__content">
+		<div class="container row">
+			<div class="header__logo col"><img src="upload/logo.png" alt=""></div>
+			<nav class="header__nav col right">
+				<ul>
+					<li><a href="#services">услуги</a></li>
+					<li><a href="#portfolio">портфолио</a></li>
+					<li><a href="#reviews">отзывы</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#shares">акции</a></li>
+					<li><a href="#about">обо мне</a></li>
+					<li><a href="#prices">ЦЕНЫ</a></li>
+					<li><a href="#contacts">КОНТАКТЫ</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-btn hidden">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div class="slider">
+		<div class="slider__content">
+			<div class="slider__title">Hair with Love</div>
+			<div class="slider__desc">by Lybov Statkevich</div>
+			<div class="slider__text">Студия красивых волос всего в 5 минутах от <span class="m">м.</span>Озерки</div>
+			<a data-fancybox data-src="#popup-order" href="javascript:;" class="slider__button button button_gradient"><span>ЗАПИСАТЬСЯ</span></a>
+		</div>
+		<div class="slider__images arrows">
+			<div class="slider__image"><img src="upload/slider/1.png" alt=""></div>
+			<div class="slider__image"><img src="upload/slider/2.png" alt=""></div>
+			<div class="slider__image"><img src="upload/slider/3.png" alt=""></div>
+			<div class="slider__image"><img src="upload/slider/4.png" alt=""></div>
+		</div>
+	</div>
 </header>
 
 
 <main class="main">
-	
+	<div class="services" id="services">
+		<div class="container">
+			<div class="services__title title">Услуги</div>
+			<div class="services__subtitle">Подарите себе профессиональный уход за волосами!</div>
+			<div class="services__desc">Приглашаю вас на процедуры, которые превращают тусклые, безжизненные волосы с секущимися кончиками в гладкую, струящуюся волну! Даже самые пересушенные волосинки заблестят, станут сильными и упругими! Абсолютно безопасные составы без формальдегида. <br>Роскошные волосы каждый день, без утюжка, укладки и распутывания!</div>
+			<div class="services__list row_line">
+				<div class="services__item col_line">
+					<div class="services__image">
+						<img src="upload/services/1.png" alt="">
+						<a data-fancybox data-src="#popup-order" href="javascript:;" class="services__link button button_gradient-opacity"><span>ЗАПИСАТЬСЯ</span></a>
+					</div>
+					<div class="services__text">Ботокс</div>
+				</div>
+				<div class="services__item col_line">
+					<div class="services__image">
+						<img src="upload/services/2.png" alt="">
+						<a data-fancybox data-src="#popup-order" href="javascript:;" class="services__link button button_gradient-opacity"><span>ЗАПИСАТЬСЯ</span></a>
+					</div>
+					<div class="services__text">Кератиновое выпрямление</div>
+				</div>
+				<div class="services__item col_line">
+					<div class="services__image">
+						<img src="upload/services/3.png" alt="">
+						<a data-fancybox data-src="#popup-order" href="javascript:;" class="services__link button button_gradient-opacity"><span>ЗАПИСАТЬСЯ</span></a>
+					</div>
+					<div class="services__text">Кератиновое восстановление</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="why">
+		<div class="container">
+			<div class="why__title title">Почему выбирают меня</div>
+			<div class="why__list row">
+				<div class="why__item col col-5">
+					<div class="why__icon"><i class="icon icon-chat"></i></div>
+					<div class="why__subtitle">Бесплатные консультации</div>
+					<div class="why__text">Рассказываю об уходе за волосами, различиях в процедурах и обо всем, что вас интересует абсолютно бесплатно</div>
+				</div>
+				<div class="why__item col col-5">
+					<div class="why__icon"><i class="icon icon-sheet"></i></div>
+					<div class="why__subtitle">Лучшие составы</div>
+					<div class="why__text">Я работаю только на премиальных составах Inoar, Honma Tokyo и Cadiveau и для каждой подбираю индивидуальный уход и тип состава</div>
+				</div>
+				<div class="why__item col col-5">
+					<div class="why__icon"><i class="icon icon-docs"></i></div>
+					<div class="why__subtitle">Честные цены</div>
+					<div class="why__text">Назначая нашу встречу, мы обговариваем цену, которая остается фиксированной после процедуры. Никаких доплат!</div>
+				</div>
+				<div class="why__item col col-5">
+					<div class="why__icon"><i class="icon icon-chek"></i></div>
+					<div class="why__subtitle">Высокое качество</div>
+					<div class="why__text">Я дипломированный мастер с большим опытом, и гарантирую высокое качество своей работы.</div>
+				</div>
+				<div class="why__item col col-5">
+					<div class="why__icon"><i class="icon icon-heart"></i></div>
+					<div class="why__subtitle">Любовь к своему делу</div>
+					<div class="why__text">Я люблю своё дело. Получаю удовольствие от работы и от положительных эмоций, которые испытывают клиенты моей студии.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="portfolio__title title">Портфолио</div>
+			<div class="portfolio__list arrows">
+				<div class="portfolio__item"><img src="upload/portfolio/1.png" alt=""></div>
+				<div class="portfolio__item"><img src="upload/portfolio/2.png" alt=""></div>
+				<div class="portfolio__item"><img src="upload/portfolio/3.png" alt=""></div>
+				<div class="portfolio__item"><img src="upload/portfolio/4.png" alt=""></div>
+				<div class="portfolio__item"><img src="upload/portfolio/5.png" alt=""></div>
+				<div class="portfolio__item"><img src="upload/portfolio/6.png" alt=""></div>
+			</div>
+			<a data-fancybox data-src="#popup-order" href="javascript:;" class="portfolio__button button button_gradient"><span>ЗАПИСАТЬСЯ</span></a>
+		</div>
+	</div>
+
+	<div class="reviews" id="reviews">
+		<div class="container">
+			<div class="reviews__list">
+				<div class="reviews__list-item">
+					<div class="reviews__text">
+						<p>Хочу начать с того как я начала их мыть !</p>
+						<p>Когда только стала мочить волосы сразу же почувствовала какие они мягкие и не путаются от<br>воды)расчесываются просто суперски ,как по маслу)</p>
+						<p>Посушив волосы они были нереально мыгкие,что даже забыла что ещё вчера брала утюжок!!!</p>
+						<p>Вообщем я очень рада,спасибо большое Теперь по уходу за волосами только к тебе)))</p></div>
+					<div class="reviews__name">Екатерина</div>
+				</div>
+				<div class="reviews__list-item">
+					<div class="reviews__text">
+						<p>Добрый день! Все здорово я очень довольна работой. Волосы в идеальном <br>состоянии</p>
+					</div>
+					<div class="reviews__name">Наталья Путова</div>
+				</div>
+				<div class="reviews__list-item">
+					<div class="reviews__text">
+						<p>Надоело ежедневно тянуть утюгом волосы и я решилась на кератин. Я в <br>восторге! Волосы стали шелковистые, послушные, гладкие. А самое главное, <br>что нет больше правила «мыть через 4 дня». У мастера руки золотые.</p>
+					</div>
+					<div class="reviews__name">Александра Бабух</div>
+				</div>
+				<div class="reviews__list-item">
+					<div class="reviews__text">
+						<p>Мне очень понравилось.Делала кератиновое выпрямление волос и ещё <br>Люба пригласила меня на полировку)</p>
+						<p>Волосы мягкие,прямые и блестящие,никак не могу налюбоваться)Осталось <br>убрать секущиеся кончики и будет вообще бомба. Спасибо <br>огромное)Обязательно приду повторить процедуру через 2 месяца)</p>
+					</div>
+					<div class="reviews__name">Elizaveta Guseva</div>
+				</div>
+			</div>
+			<div class="reviews__faces">
+				<div class="reviews__faces-item"><img src="upload/reviews/1.jpg" alt=""></div>
+				<div class="reviews__faces-item"><img src="upload/reviews/2.jpg" alt=""></div>
+				<div class="reviews__faces-item"><img src="upload/reviews/3.jpg" alt=""></div>
+				<div class="reviews__faces-item"><img src="upload/reviews/4.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="faq" id="faq">
+		<div class="container">
+			<div class="faq__title title">ТОП вопросов <br />об уходе за волосами</div>
+			<div class="faq__list">
+				<div class="faq__item">
+					<div class="faq__head">Как выполняется процедура?</div>
+					<div class="faq__body">
+						<p>— Подготовительный этап. Наносим специальный шампунь, раскрывающий чешуйки волос</p>
+						<p>— Рабочий состав распределяем по всей длине волос, исключая корни и кожу головы</p>
+						<p>— Закрепляем состав на волосах при помощи утюжка</p>
+						<p>— Завершающий этап – защитная маска-пленка для волос</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Как долго длится эффект?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Когда можно мыть голову?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Не вредит ли волосам?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Не потеряют ли волосы объём?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Можно ли беременным?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Что будет, когда состав смоется?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+				<div class="faq__item">
+					<div class="faq__head">Какие гарантии?</div>
+					<div class="faq__body">
+						<p>—</p>
+					</div>
+				</div>
+			</div>
+			<a href="" data-fancybox data-src="#popup-order" href="javascript:;" class="faq__button button button_gradient"><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span></a>
+		</div>
+	</div>
+
+	<div class="shares" id="shares">
+		<div class="container">
+			<div class="shares__list">
+				<div class="shares__item">
+					<div class="shares__title title title_white">Акция №1</div>
+					<div class="shares__subtitle">Получи скидку 20% за каждую <br>приглашённую подругу!</div>
+				</div>
+				<div class="shares__item">
+					<div class="shares__title title title_white">Акция №2</div>
+					<div class="shares__subtitle">ХОЧЕШЬ СКИДКУ 10% НА ЛЮБУЮ <br>ПРОЦЕДУРУ?</div>
+					<div class="shares__text">*Подпишись в VK и Instagram, сделай репост любой понравившейся <br>фотографии и покажи репосты, когда придёшь на процедуру.</div>
+				</div>
+				<div class="shares__item">
+					<div class="shares__title title title_white">Акция №3</div>
+					<div class="shares__subtitle">Первой записавшейся, ЛЮБАЯ<br>ПРОЦЕДУРА за 2700₽, любая длина!</div>
+					<div class="shares__text">*Акция действует каждый день!</div>
+				</div>
+				<div class="shares__item">
+					<div class="shares__title title title_white">Акция №4</div>
+					<div class="shares__subtitle">Стрижка кончиков  в подарок<br>при любой процедуре!</div>
+				</div>
+			</div>
+			<a href="" data-fancybox data-src="#popup-order" href="javascript:;" class="shares__button button button_white"><span>ЗАПИСАТЬСЯ</span></a>
+		</div>
+	</div>
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about__title title">Обо мне</div>
+			<div class="about__image"><img src="upload/about.png" alt=""></div>
+			<div class="about__text">Меня зовут Любовь, я сертифицированный мастер кератинового выпрямления, восстановления и ботокса для волос. В работе я всегда использую только лучшие профессиональные составы. Я очень люблю свою работу и дарю каждой своей клиентке волосы, о которых она мечтала! Я хочу помочь каждой своей клиентке восстановить испорченные волосы, чтобы у каждой девушки они были гладкие, шелковые, с зеркальным блеском, ухоженные и самое главное здоровыми! Для меня очень важна безопасность составов, с которыми я работаю, поэтому выбираю такие марки как CADIVEU PROFESSIONAL, BRAZILIAN BLOWOUT, INOAR, HONMA TOKYO, BB GLOSS для выпрямления и лечения волос, которые абсолютно безопасны для любого клиента (разрешены беременным и кормящим) с любым типом волос, даже поврежденных химической завивкой и краской. Я уверена, что Вам очень понравится процедура кератинового выпрямления и восстановления, которая полностью преобразит ваши волосы и они станут живыми, ухоженными, с зеркальным блеском, как с обложки журнала! Позвоните мне и я с удовольствием проконсультирую вас и порекомендую оптимальную процедуру.</div>
+		</div>
+	</div>
+
+	<div class="certificates">
+		<div class="container">
+			<div class="certificates__title">Сертификаты</div>
+			<div class="certificates__list row_line">
+				<div class="certificates__item col_line"><img src="upload/certificates/1.png" alt=""></div>
+				<div class="certificates__item col_line"><img src="upload/certificates/2.png" alt=""></div>
+				<div class="certificates__item col_line"><img src="upload/certificates/3.png" alt=""></div>
+				<div class="certificates__item col_line"><img src="upload/certificates/4.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="prices" id="prices">
+		<div class="container">
+			<div class="prices__title title">Цены</div>
+			<div class="prices__table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Длина волос</th>
+							<th>Ботокс</th>
+							<th>Кератиновое <br>выпрямление</th>
+							<th>Кератиновое <br>восстановление</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><div class="line">Короткие</div></td>
+							<td><div class="line">1800</div></td>
+							<td><div class="line">2000</div></td>
+							<td><div class="line">1800</div></td>
+						</tr>
+						<tr>
+							<td><div class="line">Ниже плеч</div></td>
+							<td><div class="line">2300</div></td>
+							<td><div class="line">2400</div></td>
+							<td><div class="line">2300</div></td>
+						</tr>
+						<tr>
+							<td><div class="line">До лопаток</div></td>
+							<td><div class="line">2800</div></td>
+							<td><div class="line">2800</div></td>
+							<td><div class="line">2800</div></td>
+						</tr>
+						<tr>
+							<td><div class="line">До талии</div></td>
+							<td><div class="line">3500</div></td>
+							<td><div class="line">3700</div></td>
+							<td><div class="line">3500</div></td>
+						</tr>
+						<tr>
+							<td><div class="line">Ниже талии</div></td>
+							<td><div class="line">4000</div></td>
+							<td><div class="line">4200</div></td>
+							<td><div class="line">4000</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </main>
 
 
-<footer class="footer">
-	
+<footer class="footer" id="contacts">
+	<div class="container">
+		<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
+		<div class="footer__content row">
+			<div class="footer__left col col-3">
+				<div class="footer__subtitle">КОНТАКТЫ</div>
+				<div class="footer__contacts">
+					<p><a href="tel:89650399910">8-965-039-99-10</a></p>
+					<p>Санкт-Петербург, пр Энгельса, 128</p>
+				</div>
+			</div>
+			<div class="footer__middle col col-3">
+				<div class="footer__subtitle">Часы работы: 9.00-21.00</div>
+				<div class="footer__socials">
+					<ul>
+						<li><span>Мы в Инстаграм</span><a href="" target="_blank"><i class="icon icon-insta"></i></a></li>
+						<li><span>Мы ВКонтакте</span><a href="" target="_blank"><i class="icon icon-vk"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__right right col col-3">
+				<div class="footer__gallery gallery row_line">
+					<div class="gallery__item col_line"><img src="upload/gallery/1.png" alt=""></div>
+					<div class="gallery__item col_line"><img src="upload/gallery/2.png" alt=""></div>
+					<div class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></div>
+					<div class="gallery__item col_line"><img src="upload/gallery/4.png" alt=""></div>
+					<div class="gallery__item col_line"><img src="upload/gallery/5.png" alt=""></div>
+					<div class="gallery__item col_line"><img src="upload/gallery/6.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 
 
