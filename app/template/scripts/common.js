@@ -73,6 +73,8 @@ $(document).ready(function($) {
 		$(this).toggleClass('mobile-btn_click');
 		$('.header__nav').toggle(0);
 	});
+
+
 	$('.popup form').submit(function() {
 		$.ajax({
 			type: "POST",
@@ -84,5 +86,12 @@ $(document).ready(function($) {
 			
 		});
 		return false;
+	});
+	$(window).on('load resize', function(event) {
+		var windowWidth = $(window).width();
+		if(windowWidth > 965){
+			$('.mobile-btn').removeClass('mobile-btn_click');
+			$('.header__nav').removeAttr('style');
+		}
 	});
 });
