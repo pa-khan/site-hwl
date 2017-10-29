@@ -282,7 +282,9 @@
   .faq__button {
     width: 100%;
     font-size: 17px;
-    font-weight: 600; } }
+    font-weight: 600; }
+  .popup {
+    width: 95%; } }
 
 @media screen and (max-width: 430px) {
   .prices__table .table th {
