@@ -2,21 +2,22 @@
 <?php
 if (isset($_POST['name'])) {$name = $_POST['name'];}
 if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
-if (isset($_POST['comment'])) {$comment = $_POST['comment'];}
+if (isset($_POST['q'])) {$q = $_POST['q'];}
 
 $message;
 
 if ($name== true) {
-	$message .= "\nПредставились: $name";
+	$message .= "Представились: $name";
 }
 
 if ($phone== true) {
 	$message .= "\nНомер телефона: $phone";
 }
 
-if ($comment == true) {
-	$message .= "\Заданный вопрос: $comment";
+if ($q== true) {
+	$message .= "\nЗаданный вопрос: $q";
 }
+
 
 
 $to = "e5ash.bro@gmail.com";
